@@ -46,11 +46,11 @@ public class Empilhamento implements Empilhavel {
 
     @Override
     public void imprimir(){
-        for(int i = ponteirotopo; i <= ponteirotopo; i--){
-            if(i > 0){
+        for(int i = 0; i <= ponteirotopo; i++){
+            if(i < ponteirotopo){
                 System.out.print("[" + dados[i] + "], ");
-            } else if (i == 0) {
-                System.out.print("[" + dados[i] + "]");
+            } else if (i == ponteirotopo) {
+                System.out.println("[" + dados[i] + "]");
             }
         }
     }

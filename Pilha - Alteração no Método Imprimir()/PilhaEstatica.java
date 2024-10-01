@@ -7,8 +7,13 @@ public class PilhaEstatica {
         pilha.empilhar("cnh");
         pilha.empilhar("titulo de eleitor");
         pilha.empilhar("tipo sanguineo");
-        //pilha.desempilhar();
 
+        pilha.imprimir();
+        System.out.println(pilha.topo());
+        System.out.println(pilha.cheia());
+        System.out.println(pilha.vazia());
+        
+        pilha.desempilhar();
         pilha.imprimir();
     }
 }
